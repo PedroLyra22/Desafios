@@ -14,3 +14,12 @@ CREATE TABLE IF NOT EXISTS filmes (
     ano_lancamento INTEGER,
     disponivel BOOLEAN
 );
+
+CREATE TABLE IF NOT EXISTS locacoes (
+    id_locacao INTEGER PRIMARY KEY AUTOINCREMENT,
+    id_cliente INTEGER NOT NULL,
+    id_filme INTEGER NOT NULL,
+    data_locacao DATE NOT NULL,
+    data_devolucao DATE,
+    status_locacao VARCHAR(10) CHECK (status_locacao IN ('ativo', 'concluido'))
+);

@@ -22,4 +22,7 @@ CREATE TABLE IF NOT EXISTS locacoes (
     data_locacao DATE NOT NULL,
     data_devolucao DATE,
     status_locacao VARCHAR(10) CHECK (status_locacao IN ('ativo', 'concluido'))
+
+    FOREIGN KEY (id_cliente) REFERENCES clientes(id_cliente),
+    FOREIGN KEY (id_filme) REFERENCES filmes(id_filme)
 );

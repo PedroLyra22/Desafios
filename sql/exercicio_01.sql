@@ -32,3 +32,11 @@ INSERT INTO clientes (nome, email, telefone, endereco) VALUES
     ('Luiza', 'lula@gmail.com', '999999999', 'Cocal, rua 3'),
     ('Vitor', 'vitorpcrcanedo@gmail.com', '777777777', 'itaparica, av champanhar'),
     ('Lucas', 'lucasdlima@gmail.com', '222222222', 'ibes, proximo a pracinha');
+
+INSERT INTO filmes (titulo, categoria, ano_lancamento, disponivel) VALUES
+    ('Gigantes de Aço', 'Ação', 2011, 1),
+    ('Coraline', 'Infantil', 2009, 0),
+    ('It a Coisa', 'Terror', 2017, 1),
+    ('Rocky Balboa', 'Ação', 2006, 1),
+    ('Como Perder um Homem em 10 Dias', 'Comédia Romantica', 2003, 1);
+

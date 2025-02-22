@@ -26,3 +26,9 @@ CREATE TABLE IF NOT EXISTS locacoes (
     FOREIGN KEY (id_cliente) REFERENCES clientes(id_cliente),
     FOREIGN KEY (id_filme) REFERENCES filmes(id_filme)
 );
+
+-- insert some values
+INSERT INTO clientes (nome, email, telefone, endereco) VALUES
+    ('Luiza', 'lula@gmail.com', '999999999', 'Cocal, rua 3'),
+    ('Vitor', 'vitorpcrcanedo@gmail.com', '777777777', 'itaparica, av champanhar'),
+    ('Lucas', 'lucasdlima@gmail.com', '222222222', 'ibes, proximo a pracinha');

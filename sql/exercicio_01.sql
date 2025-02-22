@@ -40,3 +40,6 @@ INSERT INTO filmes (titulo, categoria, ano_lancamento, disponivel) VALUES
     ('Rocky Balboa', 'Ação', 2006, 1),
     ('Como Perder um Homem em 10 Dias', 'Comédia Romantica', 2003, 1);
 
+INSERT INTO locacoes (id_cliente, id_filme, data_locacao, status_locacao) VALUES
+    (1, 2, 28/12/2006, 'ativo'),
+    (2, 4, 22/08/2003, 'concluido');
